@@ -1,0 +1,505 @@
+
+@font-face{
+    font-family: flexo;
+    src: url('fonts/Flexo-Medium.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: pokemonfont;
+    src: url('fonts/Pokemon Solid.ttf') format("truetype");
+}
+
+
+
+html *{
+    font-family: flexo;
+
+}
+
+
+
+body{
+    background: url(../images/background.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    
+}
+
+
+
+.header{
+    color: black;
+    font-size: 4rem;
+}
+
+.pokedex{
+    width: 400px;
+    height: 550px;
+    background: #CC0000;
+    text-align:center;
+    border: 5px solid;
+    padding: 30px;
+    display:flex;
+    justify-content:center;
+    border:2px solid black;
+
+}
+
+ .pokemon-list{
+    border: 2px solid black;
+    width: 400px;
+    height: 550px;
+    background: #CC0000;
+}
+
+.pokeBtn{
+    background: white;
+}
+
+.pokeBtn:hover{
+    background: gray;
+}
+
+
+
+.flexbox-container{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.carousel-item{
+    background:#CC0000;
+    border: 2px solid black;
+}
+
+.pokemon-entries{
+    overflow-y: scroll;
+
+    height: 444.5px;
+}
+
+.pokemon-entries::-webkit-scrollbar{
+    width: .25rem;
+}
+
+
+
+.pokemon-entries::-webkit-scrollbar-track{
+    background: white;
+}
+
+.pokemon-entries::-webkit-scrollbar-thumb{
+    background: black;
+}
+
+.pokemon-img{
+    background: white;
+}
+
+.pokeBtn{
+    display: block;
+    width: 100%;
+}
+
+/* .navbar-brand{
+    font-family: pokemonfont;
+} */
+
+
+.mylogo{
+    color: white;
+}
+
+.navcontainer{
+    background: #CC0000;
+    z-index: 2;
+}
+
+.carousel-inner{
+    width: 100%;
+}
+
+.pokemon-img{
+    margin: auto;
+
+}
+
+.dropdown-menu{
+    background: #CC0000;
+}
+
+.dropdown-item{
+    background: #CC0000;
+}
+ul.navbar-nav a{
+    color: white;
+}
+ul.navbar-nav a:hover { color: white !important; }
+
+.dropdown-menu > li > a:hover{
+    background-color: black;
+}
+
+.pokemon-search{
+    width: 230px;
+}
+
+.go-btn{
+    width: 80px;
+}
+
+td{
+  text-align: center;
+  padding: 1em;
+}
+
+.table-headings{
+  background: black;
+  color: white;
+}
+
+
+.user-entry{
+    background:white;
+    border-bottom: 2px solid black;
+}
+
+.col{
+    padding: 5px;
+    margin: 10px;
+
+}
+.col-data{
+    margin: auto;
+    text-align: center;
+}
+
+.register-form{
+    margin: auto;
+    width: 300px;
+    background: black;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+
+
+.label-content{
+    margin-top:10px;
+}
+
+.pokedex-column{
+    margin:0;
+}
+
+.list-column{
+    margin: 0;
+}
+
+.submit-btn{
+    width: 100%;
+}
+
+.register-btn{
+    width: 100%;
+}
+
+.dropdown-item:hover{
+    background: black;
+}
+
+
+.slider-outercontainer{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    min-height: 50vh;
+    background: #f1f4fd;
+}
+.slider-container {
+    max-width: 1200px;
+    width: 95%;
+  }
+  .slider-wrapper {
+    position: relative;
+  }
+  .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-wrapper .slide-button:hover {
+    background: #404040;
+  }
+  .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+  }
+  .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+  }
+  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+  .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+  }
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+  }
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+  }
+
+  .art-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .art-card{
+    width: 240px;
+    height: 350px;
+    background: black;
+    border: 2px solid black;
+    background-size: cover;
+  }
+
+  .art-card:hover{
+    cursor: pointer;
+  }
+
+
+  .input-file{
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .fanart-heading{
+    text-align: center;
+    font-size: 4em;
+}
+
+.userpass-div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.games-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.game-card{
+  width: 340px;
+  height: 250px;
+  background: black;
+  border: 2px solid black;
+  background-size: cover;
+  text-align : center;
+  border-radius: 2em;
+  overflow: hidden;
+}
+.game-bg{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 9em;
+  margin: auto;
+}
+.game-title{
+  text-align: center;
+  margin-top: .5em;
+  color: white;
+}
+
+.game-card:hover{
+  cursor:pointer;
+}
+
+.game-1{
+  background-image: url("../images/rednblue.jpg");
+}
+
+.game-2{
+  background-image: url("../images/yellow.jpg");
+}
+
+.game-3{
+  background-image: url("../images/goldnsilver.jpg");
+}
+
+.game-4{
+  background-image: url("../images/crystal.jpg");
+}
+
+.game-5{
+  background-image: url("../images/rubnsap.jpg");
+}
+
+.game-6{
+  background-image: url("../images/fireandleaf.jpg");
+}
+
+.game-7{
+  background-image: url("../images/emerald.jpg");
+}
+
+.game-8{
+  background-image: url("../images/dianpearl.jpg");
+}
+
+.game-9{
+  background-image: url("../images/platinum.jpg");
+}
+
+.game-10{
+  background-image: url("../images/heartnsoul.jpg");
+}
+
+.game-11{
+  background-image: url("../images/blacknwhite.jpg");
+}
+
+.game-12{
+  background-image: url("../images/black2nwhite2.jpg");
+}
+
+.game-13{
+  background-image: url("../images/xny.jpg");
+}
+
+.game-14{
+  background-image: url("../images/omeganalpha.jpg");
+}
+
+.game-15{
+  background-image: url("../images/sunnmoon.jpg");
+}
+
+.game-16{
+  background-image: url("../images/ultra.jpg");
+}
+
+.game-17{
+  background-image: url("../images/lesgo.jpg");
+}
+
+.game-18{
+  background-image: url("../images/swordnshield.jpg");
+}
+
+.game-19{
+  background-image: url("../images/brilliantnshining.png");
+}
+
+.game-20{
+  background-image: url("../images/arceus.jpg");
+}
+
+.game-21{
+  background-image: url("../images/scarnvio.png");
+}
+
+.edit-user-container{
+  margin: auto;
+  padding: 2em;
+  width: 25em;
+  height: auto;
+  border: 2px solid black;
+}
+
+.edit-btn{
+  margin: auto;
+}
+  /* Styles for mobile and tablets */
+  @media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+    }
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }
+
+
+
